@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionShop - Toko Baju Online</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #333; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #444; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; }
+        .product { display: inline-block; width: 30%; margin: 10px; text-align: center; }
+        .product img { width: 100%; height: 200px; object-fit: cover; }
+        footer { text-align: center; padding: 10px; background: #333; color: white; }
+        form { max-width: 400px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        button { background: #333; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FashionShop</h1>
+        <p>Toko baju terlengkap dan terupdate!</p>
+    </header>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <div class="container" id="home">
+        <h2>Selamat Datang di FashionShop</h2>
+        <p>Kami menawarkan koleksi baju terbaru dengan harga terjangkau. Temukan gaya kamu di sini!</p>
+    </div>
+    <div class="container" id="products">
+        <h2>Produk Kami</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Baju+Casual" alt="Baju Casual">
+            <h3>Baju Casual</h3>
+            <p>Rp 150.000</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Baju+Formal" alt="Baju Formal">
+            <h3>Baju Formal</h3>
+            <p>Rp 200.000</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Baju+Musim+Dingin" alt="Baju Musim Dingin">
+            <h3>Baju Musim Dingin</h3>
+            <p>Rp 250.000</p>
+            <button>Beli Sekarang</button>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" rows="4" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 FashionShop. Semua hak dilindungi.</p>
+    </footer>
+    <script>
+        // Script sederhana untuk alert saat tombol beli diklik
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent === 'Beli Sekarang') {
+                btn.addEventListener('click', () => alert('Terima kasih! Produk akan ditambahkan ke keranjang.'));
+            }
+        });
+    </script>
+</body>
+</html>
